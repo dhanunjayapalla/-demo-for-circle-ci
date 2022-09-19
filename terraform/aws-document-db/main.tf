@@ -4,11 +4,7 @@ provider "aws" {
 }
 
 # Get VPC by sandbox id
-data "aws_vpc" "sandbox_vpc" {
-    filter {
-        name = "tag:torque-sandbox-id"
-        values = ["${var.SANDBOX_ID}"]
-    }    
+data "aws_vpc" "sandbox_vpc" {    
 }
 
 # Get app subnets by sandbox id
