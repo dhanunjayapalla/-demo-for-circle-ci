@@ -4,8 +4,7 @@ provider "aws" {
 }
 
 # Get VPC by sandbox id
-data "aws_vpc" "sandbox_vpc" {    
-}
+data "aws_vpc" "sandbox_vpc"
 
 # Get app subnets by sandbox id
 data "aws_subnet" "sandbox_app_subnet_0" {
